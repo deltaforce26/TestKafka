@@ -16,3 +16,9 @@ print("Listening for messages on Kafka.")
 def consume_messages():
     for message in consumer:
         data = message.value
+
+
+
+if __name__ == '__main__':
+    while True:
+        consume_messages()
