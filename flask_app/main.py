@@ -1,5 +1,4 @@
 from flask import Flask
-
 from db.database import init_db, test_connection
 from flask_app.controllers.message_blueprints import message_bp
 

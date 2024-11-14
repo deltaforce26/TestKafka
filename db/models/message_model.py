@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, ForeignKey
 from sqlalchemy.orm import relationship, Mapped
 from db.models import Base
-from db.models import LocationModel
+from db.models.location_model import LocationModel
 
 
 class MessageModel(Base):

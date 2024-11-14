@@ -6,7 +6,7 @@ from sqlalchemy.exc import SQLAlchemyError
 
 
 
-DB_URL = 'postgresql://postgres:postgres@localhost:5432/messages_db'
+DB_URL = 'postgresql://admin:1234@localhost:5434/messages_db'
 
 engine = create_engine(DB_URL)
 session_maker = sessionmaker(bind=engine)
@@ -14,6 +14,7 @@ session_maker = sessionmaker(bind=engine)
 def init_db():
     Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
+    print('Database initialized.')
 
 
 
